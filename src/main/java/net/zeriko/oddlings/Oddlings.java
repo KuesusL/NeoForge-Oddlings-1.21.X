@@ -1,6 +1,7 @@
 package net.zeriko.oddlings;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.zeriko.oddlings.block.ModBlocks;
 import net.zeriko.oddlings.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,6 +38,7 @@ public class Oddlings {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -53,6 +55,11 @@ public class Oddlings {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ODD_BAR);
             event.accept(ModItems.ODD_CHUNK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ODD_BLOCK);
+            event.accept(ModBlocks.ODD_ORE);
         }
     }
 
