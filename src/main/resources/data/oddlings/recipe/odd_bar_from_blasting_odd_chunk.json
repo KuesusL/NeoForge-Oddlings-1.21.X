@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "odd_bar",
+  "ingredient": {
+    "item": "oddlings:odd_chunk"
+  },
+  "result": {
+    "count": 1,
+    "id": "oddlings:odd_bar"
+  }
+}

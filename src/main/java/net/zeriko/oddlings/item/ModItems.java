@@ -11,6 +11,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> ODD_BAR = ITEMS.register("odd_bar",
             () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> ODD_CHUNK = ITEMS.register("odd_chunk",
             () -> new Item(new Item.Properties()));
 

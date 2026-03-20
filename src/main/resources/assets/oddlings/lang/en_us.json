@@ -1,6 +1,12 @@
 {
   "item.oddlings.odd_bar": "Odd Bar",
   "item.oddlings.odd_chunk": "Odd Chunk",
+
   "block.oddlings.odd_block": "Odd Block",
-  "block.oddlings.odd_ore": "Odd Ore"
+  "block.oddlings.odd_ore": "Odd Ore",
+  "block.oddlings.deepslate_odd_ore": "Deepslate Odd Ore",
+
+  "creativetab.oddlings.oddlings_items": "Oddlings Items",
+  "creativetab.oddlings.oddlings_blocks": "Oddlings Blocks"
+
 }
