@@ -23,6 +23,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ODD_BAR);
                         output.accept(ModItems.ODD_CHUNK);
+                        output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.MAGNET_SHARD);
+                        output.accept(ModItems.ODD_NUGGET);
                     }).build());
 
     public static final Supplier<CreativeModeTab> CREATIVE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("oddlings_blocks_tab",

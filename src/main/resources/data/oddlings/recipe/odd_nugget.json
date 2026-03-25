@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oddlings:odd_bar"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "oddlings:odd_nugget"
+  }
+}

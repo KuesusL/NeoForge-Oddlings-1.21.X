@@ -1,6 +1,10 @@
 {
   "item.oddlings.odd_bar": "Odd Bar",
   "item.oddlings.odd_chunk": "Odd Chunk",
+  "item.oddlings.chisel": "Chisel",
+  "item.oddlings.magnet_shard": "Magnet Shard",
+  "item.oddlings.odd_nugget": "Odd Nugget",
+
 
   "block.oddlings.odd_block": "Odd Block",
   "block.oddlings.odd_ore": "Odd Ore",
