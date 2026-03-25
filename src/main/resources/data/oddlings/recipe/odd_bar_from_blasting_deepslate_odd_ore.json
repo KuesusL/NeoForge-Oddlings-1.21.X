@@ -5,7 +5,7 @@
   "experience": 0.25,
   "group": "odd_bar",
   "ingredient": {
-    "item": "oddlings:deepslate_odd_chunk"
+    "item": "oddlings:deepslate_odd_ore"
   },
   "result": {
     "count": 1,
