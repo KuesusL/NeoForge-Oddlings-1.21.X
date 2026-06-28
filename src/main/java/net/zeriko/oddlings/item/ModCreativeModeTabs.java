@@ -27,8 +27,6 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.MAGNET_SHARD);
-                        output.accept(ModItems.REGEN_SHARD);
-                        output.accept(ModItems.HEAL_SHARD);
 
                         output.accept(ModItems.ODD_STEAK);
 

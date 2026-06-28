@@ -1,25 +1,40 @@
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)
+![NeoForge](https://img.shields.io/badge/NeoForge-21.x-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-Installation information
-=======
+# Oddlings
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Oddlings is a Minecraft NeoForge mod that adds small, experimental, and sometimes completely random features.
+Some are useful, some are weird, and some exist simply because they sounded fun.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Features
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Current features:
+- Odd material
+- Magnet Shard
+- Reststone(Glowing block that gives you different effect on a radius according to the time)
+- And More!
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+More features will be added over time.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Goals
+
+Oddlings is not focused on a single theme.
+Instead, it serves as a collection of ideas, experiments, and mechanics that don't fit into a larger mod.
+
+## Installation
+
+1. Install NeoForge 1.21.1
+2. Download Oddlings
+3. Put the jar into the `mods` folder.
+
+## Development
+
+This project is written in Java using NeoForge.
+
+Contributions, suggestions, and bug reports are welcome.
+
+## License
+
+This project is licensed under the MIT License.
+See the LICENSE file for details.
