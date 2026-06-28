@@ -10,10 +10,11 @@ Some are useful, some are weird, and some exist simply because they sounded fun.
 ## Features
 
 Current features:
-- Odd material
+
+- Odd Material
 - Magnet Shard
-- Reststone(Glowing block that gives you different effect on a radius according to the time)
-- And More!
+- Reststone — A glowing block that grants different effects within its radius depending on the time of day.
+- And more!
 
 More features will be added over time.
 
