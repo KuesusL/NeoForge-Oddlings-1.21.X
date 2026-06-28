@@ -1,4 +1,4 @@
-package net.zeriko.oddlings;
+package net.zeriko.oddlings.ticks;
 
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -14,11 +14,11 @@ import java.util.List;
 @EventBusSubscriber
 public class MagnetTick {
 
-    private static final List<ItemEntity> activeItems = new ArrayList<>();
+    private static final List<ItemEntity> effectedItems = new ArrayList<>();
 
-    public static void addActiveItem(ItemEntity item){
-        if(!activeItems.contains(item)) {
-            activeItems.add(item);
+    public static void addEffectedItem(ItemEntity item){
+        if(!effectedItems.contains(item)) {
+            effectedItems.add(item);
         }
     }
 
@@ -27,7 +27,7 @@ public class MagnetTick {
         Player player = event.getEntity();
         if(player.level().isClientSide) return;
 
-        Iterator<ItemEntity> it = activeItems.iterator();
+        Iterator<ItemEntity> it = effectedItems.iterator();
         while(it.hasNext()) {
             ItemEntity item = it.next();
             double dist = item.distanceTo(player);

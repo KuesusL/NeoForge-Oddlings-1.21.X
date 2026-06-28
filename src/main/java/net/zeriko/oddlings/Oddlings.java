@@ -2,6 +2,7 @@ package net.zeriko.oddlings;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.zeriko.oddlings.block.ModBlocks;
+import net.zeriko.oddlings.block.custom.ExchangerBlock;
 import net.zeriko.oddlings.item.ModCreativeModeTabs;
 import net.zeriko.oddlings.item.ModItems;
 import org.slf4j.Logger;
@@ -43,27 +44,13 @@ public class Oddlings {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
-    }
-
-    // Add the block and item to the creative tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ODD_BAR);
-            event.accept(ModItems.ODD_CHUNK);
-        }
-
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.ODD_BLOCK);
-            event.accept(ModBlocks.ODD_ORE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -23,9 +23,17 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ODD_BAR);
                         output.accept(ModItems.ODD_CHUNK);
+                        output.accept(ModItems.ODD_NUGGET);
+
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.MAGNET_SHARD);
-                        output.accept(ModItems.ODD_NUGGET);
+                        output.accept(ModItems.REGEN_SHARD);
+                        output.accept(ModItems.HEAL_SHARD);
+
+                        output.accept(ModItems.ODD_STEAK);
+
+                        output.accept(ModItems.ODD_ASHES);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> CREATIVE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("oddlings_blocks_tab",
@@ -37,6 +45,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ODD_BLOCK);
                         output.accept(ModBlocks.ODD_ORE);
                         output.accept(ModBlocks.DEEPSLATE_ODD_ORE);
+                        output.accept(ModBlocks.ODD_STONE);
+                        output.accept(ModBlocks.RESTSTONE);
                     }).build());
 
     public static void register(IEventBus eventBus){

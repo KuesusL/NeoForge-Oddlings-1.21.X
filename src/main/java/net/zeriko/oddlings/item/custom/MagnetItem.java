@@ -1,5 +1,6 @@
 package net.zeriko.oddlings.item.custom;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -9,9 +10,11 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.zeriko.oddlings.MagnetTick;
+import net.zeriko.oddlings.ticks.MagnetTick;
+
+import java.util.List;
 
 public class MagnetItem extends Item {
 
@@ -27,13 +30,20 @@ public class MagnetItem extends Item {
         if(!level.isClientSide) {
             double radius = 5.0;
             for(ItemEntity item : level.getEntitiesOfClass(ItemEntity.class, player.getBoundingBox().inflate(radius))) {
-                MagnetTick.addActiveItem(item);
+                MagnetTick.addEffectedItem(item);
             }
             stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
 
             level.playSound(player, player.getOnPos(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS);
         }
         return InteractionResultHolder.success(stack);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.oddlings.magnet"));
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
 

@@ -11,9 +11,13 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.zeriko.oddlings.Oddlings;
+import net.zeriko.oddlings.block.custom.ExchangerBlock;
+import net.zeriko.oddlings.block.custom.ReststoneBlock;
 import net.zeriko.oddlings.item.ModItems;
 
 import java.util.function.Supplier;
+
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.LIT;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -30,6 +34,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DEEPSLATE_ODD_ORE = registerBlock("deepslate_odd_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3.05f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> ODD_STONE = registerBlock("odd_stone",
+            () -> new ExchangerBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> RESTSTONE = registerBlock("reststone",
+            () -> new ReststoneBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.SHROOMLIGHT)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -1,16 +1,26 @@
 {
+
   "item.oddlings.odd_bar": "Odd Bar",
   "item.oddlings.odd_chunk": "Odd Chunk",
   "item.oddlings.chisel": "Chisel",
   "item.oddlings.magnet_shard": "Magnet Shard",
   "item.oddlings.odd_nugget": "Odd Nugget",
+  "item.oddlings.odd_steak": "Odd Steak",
+  "item.oddlings.odd_ashes": "Odd Ashes",
+  "item.oddlings.regen_shard": "Regen Shard",
+  "item.oddlings.heal_shard": "Heal Shard",
 
 
   "block.oddlings.odd_block": "Odd Block",
+  "block.oddlings.odd_stone": "Odd Table",
+  "block.oddlings.reststone": "Reststone",
   "block.oddlings.odd_ore": "Odd Ore",
   "block.oddlings.deepslate_odd_ore": "Deepslate Odd Ore",
 
   "creativetab.oddlings.oddlings_items": "Oddlings Items",
-  "creativetab.oddlings.oddlings_blocks": "Oddlings Blocks"
+  "creativetab.oddlings.oddlings_blocks": "Oddlings Blocks",
 
+  "tooltip.oddlings.magnet": "Absorbs item at 5 blocks radius when right-clicked",
+  "tooltip.oddlings.chisel": "Press §8Shift§r for more tooltip",
+  "tooltip.oddlings.chisel_shift": "Changes targeted block to their own brick type"
 }
