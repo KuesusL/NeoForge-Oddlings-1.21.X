@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "O": {
+      "item": "oddlings:odd_bar"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  O",
+    " S ",
+    "G  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oddlings:chisel"
+  }
+}

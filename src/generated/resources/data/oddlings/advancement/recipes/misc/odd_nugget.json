@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_odd_bar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oddlings:odd_bar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oddlings:odd_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_odd_bar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oddlings:odd_nugget"
+    ]
+  }
+}

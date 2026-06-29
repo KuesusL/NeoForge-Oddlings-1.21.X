@@ -18,6 +18,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> ODD_TRANSFORMABLE = createTag("odd_transformable");
+        public static final TagKey<Item> ODD_ASHES_TRANSFORMABLE = createTag("odd_ashes_transformable");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(Oddlings.MOD_ID, name));

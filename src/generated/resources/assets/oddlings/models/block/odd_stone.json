@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "oddlings:block/odd_stone_bottom",
+    "side": "oddlings:block/odd_stone",
+    "top": "oddlings:block/odd_stone_top"
+  }
+}

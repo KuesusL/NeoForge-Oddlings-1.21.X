@@ -29,7 +29,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> ODD_ASHES = ITEMS.register("odd_ashes",
-            () -> new FuelItem(new Item.Properties(), 2400));
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> REGEN_SHARD = ITEMS.register("regen_shard",
             () -> new RegenItem(new Item.Properties().durability(10)));
