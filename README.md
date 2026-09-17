@@ -1,7 +1,7 @@
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)
 ![NeoForge](https://img.shields.io/badge/NeoForge-21.x-orange)
 ![License](https://img.shields.io/badge/License-MIT-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
+![Status](https://img.shields.io/badge/Status-Inactive-lightgrey)
 
 # Oddlings
 
